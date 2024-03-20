@@ -8,10 +8,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif; 
-    height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
 }
 .container {
     background-color: #364f6b;
@@ -79,3 +76,48 @@ h1 {
     border: 3px solid #b6b6b6;
     padding: 7px 17px;
 }
+footer{
+    background-color: gray;
+    z-index: 11;
+    position: absolute;
+    padding: 10px;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media screen and (max-width:500px){
+.container{
+min-width: 300px;
+}
+.timer-Display{
+    font-size: 2rem;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.buttons button{
+    font-size: 12px;
+}
+
+}
+@media screen and (max-width:320px){
+    .container{
+    min-width: 200px;
+    }
+    .timer-Display{
+        font-size: 1.5rem;
+    }
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .buttons button{
+        font-size: 12px;
+    }
+    
+    }
